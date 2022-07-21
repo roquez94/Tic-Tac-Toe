@@ -112,8 +112,8 @@ let gamePlay = ( function(){
     //gameInit method will initialize the game
     let gameInit = () => {
         if (player1Name.value !== '' && player2Name.value !== ''){
-            player1 = playerFactory(player1Name.value, 'X');
-            player2 = playerFactory(player2Name.value, 'O');
+            player1 = playerFactory(player1Name.value, '🥓');
+            player2 = playerFactory(player2Name.value, '🥞');
             currentPlayer = player1;
             gameRound();
         }
