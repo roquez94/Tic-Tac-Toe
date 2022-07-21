@@ -8,8 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="tic.js" defer></script>
+    <div class="background">
+
+        <div class = "menu"> 
+            <h1>TIC TAC TOE</h1>
+
+            <div class = "player-info">
+                <h3>Enter players' names and click play to start the game!</h3>
+                <form class = "player-info">
+                    <div class="form-group">
+                        <label for="player1">Player 1 (X)</label>
+                        <input type="text" class="form-control" id="player1" placeholder="Name of player 1">
+                      </div>
+                
+                      <div class="form-group">
+                        <label for="player2">Player 2 (O)</label>
+                        <input type="text" class="form-control" id="player2" placeholder="Name of player 2">
+                      </div>
+                
+                      <button type="submit" class="btn btn-primary">Play</button>
+                </form>
+            </div>
+           
+            <div class="hidden place">
+                <div class="game-status">
+                    <h4>Board:</h4>
+                </div> 
+            </div>
+
+            <div class="ScoreKeeper">
+                <button id="reset">Reset</button>
+            </div>
+            
+
+            <div class="gameboard"> 
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+
+    </div><!--End container div-->
     
-    
+    <script src="tic.js"></script>
 </body>
 </html>
